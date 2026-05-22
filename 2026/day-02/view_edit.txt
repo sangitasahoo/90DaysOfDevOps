@@ -1,0 +1,11 @@
+# file editor
+nano <file>, vi <file>, 
+
+# view file
+cat <file>
+
+# empty file
+touch <file>
+
+# search for a specific line 
+grep "<text>" <file>

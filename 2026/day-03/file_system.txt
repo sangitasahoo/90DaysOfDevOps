@@ -1,0 +1,56 @@
+# Present working directory
+pwd
+
+# List all file alson with hiden files
+ls -a
+ 
+# Change directory
+cd .
+
+# create directory
+mkdie <die>
+
+# create directory path/ or inside directory
+mkdir -p /dev/test/<dir>
+
+# copy
+cp <source path to file> <destination path to file>
+cp /root/python.txt /home
+
+# remove file or dir
+rm <file> / rm -f <file/dir>
+
+# move file / rename file
+mv /home/shub /desktop
+mv test devops
+
+# check directory permission
+ls -ld
+ls -d */          # list directories in current folder
+ls -la -d */      # with details (permissions, size, etc.)
+
+# change file permission
+chmod u+r /notes.txt
+chmod o-r /notes.txt # remove read permission from others
+
+# Change ownership
+chmod <user> <file>
+
+# change group ownership
+chgrp <group> <file>
+
+r (read) = 4
+w (write) = 2
+x (execute) = 1
+
+chmod 755 file           # rwxr-xr-x  (owner full, others read+execute)
+chmod 644 file           # rw-r--r--  (owner read+write, others read)
+chmod 600 file           # rw-------  (owner only — good for SSH keys)
+chmod +x script.sh       # add execute bit for everyone
+chmod -R 644 dir/        # apply recursively to directory
+
+4 = read (r)
+2 = write (w)
+1 = execute (x)
+
+7 = rwx   6 = rw-   5 = r-x   4 = r--   0 = ---

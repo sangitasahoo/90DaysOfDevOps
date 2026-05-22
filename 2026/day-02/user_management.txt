@@ -1,0 +1,23 @@
+# create a new user and delete
+useradd username
+userdel username
+
+# add user to a group
+usermod -aG groupname username
+
+# lock and unlock account
+usermod -L username / -U 
+
+# set/change password
+passwd username
+
+# create and delete a group
+groupadd groupname
+groupdel groupname
+
+# check user account properties
+grep <user> /etc/passwd
+
+# switch user
+su <user>
+

@@ -1,0 +1,15 @@
+# check the version of you os
+uname -r
+
+# show name of kernel(os)
+uname
+
+# check the flavour of your linux and verion
+cat /etc/os-release
+
+# current user
+whoami
+
+#todate date
+date
+

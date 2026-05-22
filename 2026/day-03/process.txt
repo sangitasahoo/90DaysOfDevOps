@@ -1,0 +1,18 @@
+ps aux                  # all running processes
+ps -ef                  # full format listing
+top                     # live process monitor
+htop                    # interactive process monitor (better)
+pgrep nginx             # find PID by name
+pidof bash              # PID of a program
+
+kill -l                 # list all signals
+
+kill PID                # send SIGTERM (graceful stop)
+kill -9 PID             # send SIGKILL (force kill)
+kill -HUP PID           # send SIGHUP (reload config)
+
+pkill nginx             # kill by name
+killall nginx           # kill all instances by name
+
+command &               # run process in background 
+nohup cmd &             # run immune to hangup (survives logout)

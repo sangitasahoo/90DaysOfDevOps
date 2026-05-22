@@ -1,0 +1,7 @@
+ip addr / ip link show        #list all active network
+dig google.com
+nslookup google.com           # A simpler alternative for basic DNS queries
+cat /etc/resolv.conf 
+ping -c 4 8.8.8.8:            # Checks basic end-to-end ICMP connectivity to an IP address
+ip route show                 # Displays the system routing table and the default gateway path
+traceroute google.com         # Identifies every router hop along the path to a destination

@@ -1,0 +1,8 @@
+# update machine/refresh
+sudo apt update & apt upgrade 
+
+# install and uninstall service 
+sudo apt install <pkg> & apt remove <pkg>
+
+# ip address
+ifconfig
