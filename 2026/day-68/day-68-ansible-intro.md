@@ -28,6 +28,8 @@ ansible --version
 ansible <host> -m ping
 ```
 
+<img width="793" height="257" alt="image" src="https://github.com/user-attachments/assets/cab59b3d-5377-463e-816d-ea437159137f" />
+
 ## Ad-hoc Commands
 Quick one-off tasks without a playbook.
 
@@ -39,6 +41,9 @@ ansible web -i inventory.ini -m apt -a "name=git state=present" --become
 ansible all -i inventory.ini -m copy -a "src=hello.txt dest=/tmp/hello.txt"
 ansible web -i inventory.ini -m service -a "name=nginx state=restarted" --become
 ```
+
+<img width="664" height="605" alt="image" src="https://github.com/user-attachments/assets/18ab3bb3-259a-4130-9814-b7ccb5535f4a" />
+
 
 - `-m` = module, `-a` = arguments, `-i` = inventory file
 - `--become` = run as sudo
@@ -62,6 +67,8 @@ ansible 'web:app' -i inventory.ini -m ping     # OR
 ansible 'all:!db' -i inventory.ini -m ping     # all except db
 ```
 
+<img width="1469" height="547" alt="image" src="https://github.com/user-attachments/assets/53f9e87c-3da9-4dde-8794-92f889c49767" />
+
 ## ansible.cfg (skip typing -i every time)
 
 ```ini
@@ -76,6 +83,9 @@ Then just run:
 ```bash
 ansible all -m ping
 ```
+
+<img width="775" height="564" alt="image" src="https://github.com/user-attachments/assets/33047b42-9a0c-4841-9ba9-fa6b8bf87aae" />
+
 
 Check it's working with `ansible --version` (look for `config file = ...`).
 
